@@ -1,1 +1,1 @@
-# ikomagame.github.io
+# こましょのゲーム
