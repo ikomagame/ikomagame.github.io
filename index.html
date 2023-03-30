@@ -169,7 +169,7 @@
             // 酒盃の描画
             Crafty.sprite(50,46,"sakazuki.png",{obstacle:[0,0]});
             Crafty.bind("EnterFrame", function(){
-                if (Crafty.frame() % 80 == 0) obj_drop();
+                if (Crafty.frame() % 75 == 0) obj_drop();
             });
             function obj_drop(){
                 Crafty.e("obstacle, 2D, Canvas, Gravity, Collision")
@@ -204,7 +204,7 @@
             // ごましょの描画
             Crafty.sprite(50,50,"gomasyo1.png",{heal:[0,0]});
             Crafty.bind("EnterFrame", function(){
-                if (Crafty.frame() % 300 == 0) obj_heal();
+                if (Crafty.frame() % 310 == 0) obj_heal();
             });
             function obj_heal(){
                 Crafty.e("heal, 2D, Canvas, Gravity, Collision")
@@ -264,7 +264,7 @@
 			let secret = 0;
             Crafty.sprite(50,50,"golnaga1.png",{Gold:[0,0]});
             Crafty.bind("EnterFrame", function(){
-                if (Crafty.frame() % 270 == 0) dropGold();
+                if (Crafty.frame() % 280 == 0) dropGold();
             });
             function dropGold(){
                 Crafty.e("Gold, 2D, Canvas, Gravity, Collision")
