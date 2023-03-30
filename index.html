@@ -169,7 +169,7 @@
             // 酒盃の描画
             Crafty.sprite(50,46,"sakazuki.png",{obstacle:[0,0]});
             Crafty.bind("EnterFrame", function(){
-                if (Crafty.frame() % 75 == 0) obj_drop();
+                if (Crafty.frame() % 60 == 0) obj_drop();
             });
             function obj_drop(){
                 Crafty.e("obstacle, 2D, Canvas, Gravity, Collision")
@@ -292,7 +292,7 @@
                         this.destroy();
                     })
                     .bind('EnterFrame', function () {
-                        this.y += 10;
+                        this.y += 11;
                         if( this.y > 500 ){
                             this.destroy();
                         }
